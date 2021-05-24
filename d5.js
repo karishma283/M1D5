@@ -63,3 +63,21 @@ function boundary(n){
  console.log(boundary(18))
 
  
+/* EXERCISE 5
+Write a function "strivify" which accepts a string.
+It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
+*/
+
+function strivify(k){
+    let words = k.split(" ");
+    for(let i=0; i<words.length;i++){
+        if(words[i]=="Strive"){
+            return k
+        }else
+        {
+            return "Strive " + k
+        }
+    }
+}
+let test = strivify("Strivehey")
+console.log(test)
