@@ -108,3 +108,35 @@ function reverseString(string){
     return joinString
 }
 console.log(reverseString("Strive"))
+
+
+
+/* EXERCISE 8
+Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
+*/
+
+function upperFirst(string){
+    let separateWord = string.toLowerCase().split(' ');
+    for (let i = 0; i < separateWord.length; i++) {
+       separateWord[i] = separateWord[i].charAt(0).toUpperCase() +
+       separateWord[i].substring(1);
+    }
+    return separateWord.join(' ');
+}
+console.log(upperFirst("this is a test for exerise"))
+
+/* EXERCISE 9
+Write a function "cutString" to create a new string without the first and last character of a given string.
+*/
+
+/* WRITE YOUR CODE HERE */
+
+/* EXERCISE 10
+Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
+*/
+
+/* WRITE YOUR CODE HERE */
+
+/* WHEN YOU ARE FINISHED
+Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.
+*/
