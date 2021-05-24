@@ -29,3 +29,21 @@ function crazySum(a,b){
     }
 }
 console.log(crazySum(8,9))
+
+
+
+/* EXERCISE 3
+Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
+It should return triple their absolute difference if the given number is greater than 19.
+*/
+function crazyDiff(a){
+    if(a > 19){
+        let diff= a - 19
+        let triple = diff * 3
+        console.log(triple)
+    }else{
+        let diff= a - 19
+        console.log(diff)
+    }
+}
+crazyDiff(15)
