@@ -96,3 +96,15 @@ function check3and7(a){
     }
 }
 console.log(check3and7(8))
+
+/* EXERCISE 7
+Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
+*/
+
+function reverseString(string){
+    let stringSplit = string.split("")
+    let reversStringInSplit = stringSplit.reverse()
+    let joinString= reversStringInSplit.join("")
+    return joinString
+}
+console.log(reverseString("Strive"))
