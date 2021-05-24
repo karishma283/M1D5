@@ -14,3 +14,18 @@ const area = function(l1,l2) {
 }
 let rectangle=area(100,90)
 console.log("The total associated rectangle area is", rectangle)
+
+/* EXERCISE 2
+Write a function "crazySum" which receives two integers. It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
+*/
+
+function crazySum(a,b){
+    if(a===b){
+        let sum = (a + b) * 3
+        console.log("If both values are same,the result is (Sum multiplied by3):", sum)
+    }else{
+        let sum=a+b
+        console.log(sum)
+    }
+}
+console.log(crazySum(8,9))
